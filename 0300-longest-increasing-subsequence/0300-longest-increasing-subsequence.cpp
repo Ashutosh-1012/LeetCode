@@ -1,5 +1,5 @@
 
- class Solution { // 256 ms, faster than 42.84%
+ class Solution { 
 public:
     int lengthOfLIS(vector<int>& nums) {
         int n = nums.size();
