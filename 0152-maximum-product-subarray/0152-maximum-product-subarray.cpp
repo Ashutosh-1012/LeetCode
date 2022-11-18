@@ -10,7 +10,7 @@ public:
         int minSub = nums[0];
         int maxProductSub = nums[0];
         
-        for (int i = 1; i < nums.size(); i++)
+        for (size_t i = 1; i < nums.size(); i++)
         {
             // element is negative so we swap max and min
             // because when multiplying negative with a negative, number becomes positive so minimum negative number will become the maximum number
