@@ -1,15 +1,12 @@
 class Solution {
 public:
     int fib(int n) {
-        int prev=0;
-        int curr=1;
-        if(n==0)return prev;
-        if(n==1)return curr;
-        int ans=0;
+    if(n<2)return n;
+        int memo[n+1];
+        memo[0]=0;
+        memo[1]=1;
         for(int i=2;i<=n;i++){
-            ans=prev+curr;
-            prev=curr;
-            curr=ans;
+            memo[i]=memo[i-1]+memo[i-2];
         }
-   return ans; }
+    return memo[n];}
 };
