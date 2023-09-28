@@ -1,6 +1,5 @@
 class Solution {
-public:
-  
+public:  
    int bs(vector<int>v,int start,int j){
        int end=v.size()-1;
        int mid;
