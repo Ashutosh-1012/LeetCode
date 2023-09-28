@@ -1,6 +1,6 @@
 class Solution {
 public:
-    
+    //check substring is palindrome or not
     bool check(string s,int i,int j){
         while(i<=j){
             if(s[i]!=s[j]){
@@ -25,6 +25,7 @@ public:
             else{
                 bool a=check(s,i,j-1);
                 bool b=check(s,i+1,j);
+//return using bitwise or
                 return a || b;
             }
         
