@@ -2,10 +2,10 @@ class Solution {
 public:
     string removeOuterParentheses(string S) {
         string res;
-        int opened = 0;
+        int op = 0;
         for (char c : S) {
-            if (c == '(' && opened++ > 0) res += c;
-            if (c == ')' && opened-- > 1) res += c;
+            if (c == '(' && op++ > 0) res += c;
+            if (c == ')' && op-- > 1) res += c;
         }
         return res;
     }
