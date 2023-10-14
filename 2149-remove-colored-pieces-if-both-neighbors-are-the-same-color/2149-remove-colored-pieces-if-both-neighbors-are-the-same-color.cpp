@@ -7,6 +7,6 @@ public:
             if (colors.substr(i, 3) == "AAA") a++;
             else if (colors.substr(i, 3) == "BBB") b++;
         }
-        return a > b;
+        return (a > b);
     }
 };
